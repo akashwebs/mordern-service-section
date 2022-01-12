@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+
+    <div id="theme-toggler" class="fas fa-moon"></div>
+    <div class="container">
+
+        <p class="title">our services</p>
+        <div class="box-container">
+            <div class="box">
+                <span class="number">01</span>
+                <i class="fas fa-code"></i>
+                <h3>Web Design</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, minus. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit, repellat.</p>
+            </div>
+
+            <div class="box">
+                <span class="number">02</span>
+                <i class="fas fa-paint-brush"></i>
+                <h3>Graphics Design</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, minus. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit, repellat.</p>
+            </div>
+
+            <div class="box">
+                <span class="number">03</span>
+                <i class="fas fa-bullhorn"></i>
+                <h3>web development</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, minus. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit, repellat.</p>
+            </div>
+
+            <div class="box">
+                <span class="number">04</span>
+                <i class="fas fa-mobile"></i>
+                <h3>responsibe</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, minus. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit, repellat.</p>
+            </div>
+
+            <div class="box">
+                <span class="number">05</span>
+                <i class="fab fa-wordpress"></i>
+                <h3>wordpress</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, minus. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit, repellat.</p>
+            </div>
+
+            <div class="box">
+                <span class="number">06</span>
+                <i class="fas fa-tools"></i>
+                <h3>UI/UX</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, minus. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit, repellat.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let themeToggler= document.querySelector('#theme-toggler');
+        themeToggler.onclick = () =>{
+
+        themeToggler.classList.toggle('fa-sun');
+        if(themeToggler.classList.contains('fa-sun')){
+            document.body.classList.add('active');
+        }
+        else{
+            document.body.classList.remove('active');
+        }
+        }
+    </script>
+    
+</body>
+</html>
